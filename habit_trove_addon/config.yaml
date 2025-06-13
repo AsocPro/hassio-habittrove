@@ -14,13 +14,13 @@ webui: "http://[HOST]:[PORT:3000]"
 ingress: false
 map:
   - type: config
-    readOnly: false
+    read_only: false
   - type: ssl
   - type: data
-    readOnly: false
+    read_only: false
     path: /app/data
   - type: backups
-    readOnly: false
+    read_only: false
     path: /app/backups
 options: {}
 schema: {}
