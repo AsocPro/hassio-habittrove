@@ -1,0 +1,26 @@
+name: HabitTrove
+version: "1.0.0"
+slug: habit_trove
+description: Run HabitTrove self-hosted habit tracker inside Home Assistant.
+startup: application
+boot: auto
+arch:
+  - amd64
+  - armv7
+  - aarch64
+ports:
+  "3000/tcp": 3000
+webui: "http://[HOST]:[PORT:3000]"
+ingress: false
+map:
+  - type: config
+    readOnly: false
+  - type: ssl
+  - type: data
+    readOnly: false
+    path:/app/data
+  - type: backups
+    readOnly: false
+    path: /app/backups
+options: {}
+schema: {}
