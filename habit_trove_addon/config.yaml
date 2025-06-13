@@ -1,5 +1,5 @@
 name: HabitTrove
-version: "0.0.1"
+version: "0.0.2"
 slug: habit_trove
 description: Run HabitTrove self-hosted habit tracker inside Home Assistant.
 startup: application
