@@ -19,7 +19,7 @@ map:
   - type: data
     read_only: false
     path: /app/data
-  - type: backups
+  - type: backup
     read_only: false
     path: /app/backups
 options: {}
