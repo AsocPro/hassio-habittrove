@@ -1,5 +1,6 @@
 FROM dohsimpson/habittrove
 
+USER root
 # Install openssl for secret generation
 RUN apk add --no-cache openssl
 
@@ -9,6 +10,7 @@ RUN mkdir -p /app/data && chmod 777 /app/data
 # Copy the run script into the container
 COPY run.sh /run.sh
 
+USER nextjs
 
 # Expose the application port
 EXPOSE 3000
