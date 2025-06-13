@@ -18,7 +18,7 @@ map:
   - type: ssl
   - type: data
     readOnly: false
-    path:/app/data
+    path: /app/data
   - type: backups
     readOnly: false
     path: /app/backups
